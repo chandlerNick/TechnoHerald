@@ -4,10 +4,11 @@ import requests
 import yfinance as yf
 import pandas as pd
 from datetime import datetime
+import os
 
 # --- CONFIG ---
-BOT_TOKEN = "7005296291:AAHl_mQ9vyYfInoHQo6hNpjs9F1Bz6uxMq0"
-CHAT_ID = "7568426940"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 LOOKBACK = "6mo"
 SYMBOL = "SPY"
 VIX_SYMBOL = "^VIX"
