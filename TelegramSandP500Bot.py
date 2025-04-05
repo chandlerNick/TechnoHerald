@@ -127,7 +127,7 @@ def summarize_crypto(symbol: str, name: str) -> str:
 def summarize_both_btc_eth():
     btc_summary = summarize_crypto("BTC-USD", "Bitcoin")
     eth_summary = summarize_crypto("ETH-USD", "Ethereum")
-    divider = "\n" + "─" * 40 + "\n"
+    divider = "\n" + "─" * 20 + "\n"
     return f"{btc_summary}{divider}{eth_summary}"
 
 
@@ -150,7 +150,7 @@ def ping_bot():
 # --- Main ---
 if __name__ == "__main__":
     report = detect_dip()
-    report += "\n\n" + "─" * 40 + "\n"
+    report += "\n\n" + "─" * 20 + "\n"
     report += summarize_both_btc_eth()
     send_telegram(report)
     
