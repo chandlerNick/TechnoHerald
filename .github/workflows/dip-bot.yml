@@ -2,7 +2,7 @@ name: Run S&P 500 Dip Bot
 
 on:
   schedule:
-    - cron: '0 14 * * *'  # Runs at 3 PM CET (2 PM UTC)
+    - cron: '0 13 * * *'  # Runs at 3 PM CET (2 PM UTC)
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
